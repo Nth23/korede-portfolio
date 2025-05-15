@@ -13,9 +13,10 @@
   --bg-color: #ffffff;
   --second-bg-color: #f0f3fa;
   --text-color: black;
-  --main-color: #395886;
-  --secondary-color: #638ecb;
-  --opt-color: #8aaee0;
+  --main-color: #638ecb;
+  --secondary-color: #8aaee0;
+  --opt-color: #395886;
+  --gradient-color: #b1c9ef;
   --large-text: 4rem;
   --medium-text: 2.5rem;
   --small-text: 1.5rem;
@@ -47,7 +48,7 @@ section {
   top: 0;
   left: 0;
   padding: 1rem 15%;
-  background-color: #8aaee0;
+  background-color: var(--opt-color);
   backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
@@ -74,7 +75,7 @@ section {
 }
 
 .gradient {
-  background: linear-gradient(90deg, var(--main-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--main-color), var(--gradient-color));
   background-clip: text;
   color: transparent;
 }
@@ -90,15 +91,15 @@ section {
 
 .navbar a:hover,
 .navbar a:focus {
-  color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .gradient-btn {
   font-size: var(--small-text);
   padding: 1rem 1rem;
   border-radius: 2rem;
-  background: linear-gradient(90deg, var(--main-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--main-color), var(--gradient-color));
   color: transparent;
   letter-spacing: 1px;
   cursor: pointer;
@@ -303,11 +304,7 @@ section {
 .bar span {
   float: left;
   height: 15px;
-  background: linear-gradient(
-    to left,
-    var(--main-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(90deg, var(--gradient-color), var(--main-color));
 }
 
 .bar p {
@@ -595,7 +592,7 @@ section {
 }
 
 .experience-item span {
-  color: var(--secondary-color);
+  color: var(--opt-color);
   font-weight: bold;
 }
 
@@ -607,20 +604,20 @@ section {
 
 .experience-item ul li::before {
   content: "•";
-  color: var(--opt-color);
+  color: var(--main-color);
 }
 
 .experience-header div,
 .experience-item div {
   border-right: none;
-  border-bottom: 1px solid #7886c7;
+  border-bottom: 1px solid var(--main-color);
   text-align: center;
 }
 
 .experience-item .experience-content {
   border: 2px solid transparent;
   border-radius: 2rem;
-  background-color: var(--secondary-color);
+  background-color: var(--opt-color);
   color: #fff;
   text-align: left;
 }
@@ -668,7 +665,7 @@ section {
 
 .project-card h3 {
   font-size: var(--medium-text);
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 .project-card p {
   font-size: var(--small-text);
