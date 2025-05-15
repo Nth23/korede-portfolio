@@ -11,11 +11,11 @@
 
 :root {
   --bg-color: #ffffff;
-  --second-bg-color: #f1f1f1;
+  --second-bg-color: #f0f3fa;
   --text-color: black;
-  --main-color: #3a59d1;
-  --secondary-color: #3d90d7;
-  --opt-color: #7ac6d2;
+  --main-color: #395886;
+  --secondary-color: #638ecb;
+  --opt-color: #8aaee0;
   --large-text: 4rem;
   --medium-text: 2.5rem;
   --small-text: 1.5rem;
@@ -47,7 +47,7 @@ section {
   top: 0;
   left: 0;
   padding: 1rem 15%;
-  background-color: rgba(122, 198, 210, 0.8);
+  background-color: #8aaee0;
   backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
@@ -74,7 +74,7 @@ section {
 }
 
 .gradient {
-  background: linear-gradient(90deg, #3a59d1, #3d90d7);
+  background: linear-gradient(90deg, var(--main-color), var(--secondary-color));
   background-clip: text;
   color: transparent;
 }
@@ -98,7 +98,7 @@ section {
   font-size: var(--small-text);
   padding: 1rem 1rem;
   border-radius: 2rem;
-  background: linear-gradient(90deg, #3a59d1, #3d90d7);
+  background: linear-gradient(90deg, var(--main-color), var(--secondary-color));
   color: transparent;
   letter-spacing: 1px;
   cursor: pointer;
@@ -303,7 +303,11 @@ section {
 .bar span {
   float: left;
   height: 15px;
-  background: linear-gradient(to left, #3a59d1, #3d90d7);
+  background: linear-gradient(
+    to left,
+    var(--main-color),
+    var(--secondary-color)
+  );
 }
 
 .bar p {
@@ -311,7 +315,7 @@ section {
   top: -2px;
   right: 10px;
   font-size: 10px;
-  color: #7ac6d2;
+  color: var(--opt-color);
   font-weight: 900;
 }
 .data-analysis {
