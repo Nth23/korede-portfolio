@@ -737,6 +737,7 @@ section {
 @media screen and (max-width: 1285px) {
   #menu-icon {
     display: block;
+    margin-left: 20px;
   }
   .navbar {
     position: absolute;
